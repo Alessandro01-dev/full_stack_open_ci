@@ -7,3 +7,5 @@ This repository contains my solutions for **Part 11** of the Full Stack Open cou
 The application is available at:
 
 🔗 [https://full-stack-open-ci-jcim.onrender.com/](https://full-stack-open-ci-jcim.onrender.com/)
+
+## Test PR pipeline trigger
