@@ -11,3 +11,4 @@ The application is available at:
 ## Test PR pipeline trigger
 ## Testing skip flag
 ## Testing minor bump
+## Testing major bump
