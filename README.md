@@ -9,3 +9,4 @@ The application is available at:
 🔗 [https://full-stack-open-ci-jcim.onrender.com/](https://full-stack-open-ci-jcim.onrender.com/)
 
 ## Test PR pipeline trigger
+## Testing skip flag
