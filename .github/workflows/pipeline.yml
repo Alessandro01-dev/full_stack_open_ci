@@ -40,6 +40,26 @@ jobs:
         run: curl ${{ secrets.RENDER_DEPLOY_HOOK }}
         if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ','), '#skip') }}
 
+      - name: Discord notification (success)
+        if: success()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: Success
+          content: '✅ Deployment Successful! A new version deployed to production'
+          title: 'Deployment details'
+          color: 0x00ff00
+
+      - name: Discord notification (failure)
+        if: failure()
+        uses: sarisia/actions-status-discord@v1
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          status: Failure
+          content: '❌ Build Failed! The pipeline encountered an error'
+          title: 'Failure details'
+          color: 0xff0000
+
   tag_release:
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-latest
