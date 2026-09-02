@@ -60,8 +60,10 @@ jobs:
 
   notify_failure:
     needs: [build_and_test, deploy]
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
       - name: Discord notification (failure)
-        if: failure()
         uses: sarisia/actions-status-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK }}
