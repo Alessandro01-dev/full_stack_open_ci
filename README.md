@@ -2,13 +2,14 @@
 
 This repository contains my solutions for **Part 11** of the Full Stack Open course from the University of Helsinki.
 
-### 🚀 Deploy
+### Deploy
 
 The application is available at:
 
-🔗 [https://full-stack-open-ci-jcim.onrender.com/](https://full-stack-open-ci-jcim.onrender.com/)
+[https://full-stack-open-ci-jcim.onrender.com/](https://full-stack-open-ci-jcim.onrender.com/)
 
-## Test PR pipeline trigger
-## Testing skip flag
-## Testing minor bump
-## Testing major bump
+### Related repository
+
+Exercise 21 (building a CI/CD pipeline for a different application) was submitted in a separate repository:
+
+[full_stack_open_ci_phonebook](https://github.com/Alessandro01-dev/full_stack_open_ci_phonebook)
